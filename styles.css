@@ -1,0 +1,85 @@
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  opacity: 0;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.wheel {
+    transition: opacity .3s ease-in-out;
+}
+
+.wheel:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+.windshield {
+    transition: opacity .3s ease-in-out;
+}
+
+.windshield:hover {
+    cursor: pointer;
+    opacity: .8 !important;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.windshield {
+    transition: opacity .3s ease-in-out;
+}
+
+.windshield:hover {
+    cursor: pointer;
+    opacity: .8 !important;
+}
+
+.rear_window {
+    transition: opacity .3s ease-in-out;
+}
+
+.rear_window:hover {
+    cursor: pointer;
+    opacity: .8 !important;
+}
+.front_door {
+    transition: opacity .3s ease-in-out;
+}
+
+.front_door:hover {
+    cursor: pointer;
+    opacity: .8 !important;
+}
+.hood {
+    transition: opacity .3s ease-in-out;
+}
+
+.hood:hover {
+    cursor: pointer;
+    opacity: .8 !important;
+}
