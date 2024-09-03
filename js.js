@@ -1,12 +1,13 @@
 const Products_id = [692493618, 692493620, 692493621, 692493625, 692493626];
 const Product_names = ['wheel', 'windshield','rear_window','front_door','hood']
 
-Ecwid.Cart.clear();
+
 localStorage.clear();
 
 try {
 
 	Ecwid.OnAPILoaded.add(function() {
+		Ecwid.Cart.clear();
 		document.getElementsByClassName('container')[0].style.setProperty( 'opacity', '1'); 
 		document.querySelector('.wheel').addEventListener('click', function(e){onclickVhod1(Product_names[0], Wheel)})
 		document.querySelector('.windshield').addEventListener('click', function(e){onclickVhod1(Product_names[1], Windshield)})
